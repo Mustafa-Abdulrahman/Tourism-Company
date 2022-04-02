@@ -1,0 +1,336 @@
+:root {
+    --main-color: rgb(32, 32, 32);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+    margin: 0;
+    background-color: rgb(233, 232, 232);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* start header */
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    background-color: rgb(255, 255, 255);
+}
+
+.header .navbar .logo {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.header .navbar .logo .img {
+    width: 50px;
+    padding-left: 15px;
+    padding-top: 4px;
+}
+
+.header .navbar .logo .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .navbar .contacts ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+}
+
+.header .navbar .contacts ul li {
+    padding: 15px;
+    font-weight: 400;
+}
+
+.header .navbar .contacts ul li:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+/* cover */
+
+.cover {
+    height: 600px;
+    background-image: url("../imgs/Amsterdam-GettyImages-840603854.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover .cover-contain {
+    width: 60%;
+    background-color: white;
+}
+
+.cover .cover-contain .cover-nav {
+    display: flex;
+    background-color: var(--main-color);
+}
+
+.cover .cover-contain .cover-nav div {
+    display: flex;
+    padding: 20px;
+    color: white;
+}
+
+.cover .cover-contain .cover-nav div:hover {
+    background-color: rgb(190, 189, 189);
+    color: black;
+}
+
+.cover .cover-contain .cover-nav div p {
+    margin: 0;
+}
+
+.cover .cover-contain .cover-nav div i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.cover .cover-contain .cover-nav .flight i {
+    transform: rotate(-35deg);
+}
+
+.cover .cover-contain .info .info-flight {
+    padding: 20px;
+}
+
+.cover .cover-contain .info .info-flight p:first-child {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.cover .cover-contain .info .info-flight .input {
+    width: 100%;
+    display: flex;
+}
+
+.cover .cover-contain .info .info-flight .input div {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.cover .cover-contain .info .info-flight .input div input {
+    width: 100%;
+    padding: 10px;
+}
+
+.cover .cover-contain .info .info-flight button {
+    padding: 15px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+/* cover */
+
+
+/* end header */
+
+
+/* -------------------------------------------------- */
+
+
+/* start container */
+
+
+/* .start offer */
+
+.container .offers {
+    padding: 15px;
+}
+
+.container .offers h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container .offers span {
+    font-weight: 600;
+}
+
+.container .offers .imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.container .offers .imgs .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .offers .imgs .img:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.container .offers .imgs .img:nth-child(5) {
+    grid-column: 4;
+    grid-row: 2 / span 2;
+}
+
+.container .offers .imgs .img {
+    position: relative;
+}
+
+.container .offers .imgs .img p {
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-weight: 800;
+    color: white;
+}
+
+
+/* .end offer */
+
+
+/* start explor */
+
+.container .explore {
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.container .explore .text-one {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+}
+
+.container .explore h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container .explore .contain {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.container .explore .contain .img {
+    flex-basis: 49%;
+    background-color: white;
+}
+
+.container .explore .contain .img img {
+    width: 100%;
+}
+
+.container .explore .contain .img .text {
+    padding: 15px;
+}
+
+.container .explore .contain .img .text span {
+    color: rgb(160, 158, 158);
+}
+
+.container .explore .contain .img .text p:last-child {
+    padding: 15px;
+    font-weight: 400;
+    background-color: rgb(252, 42, 42);
+    width: fit-content;
+    color: white;
+}
+
+.container .Reservation {
+    background-color: var(--main-color);
+    padding: 15px;
+    color: white;
+}
+
+.container .Reservation input {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.container .Reservation h4 {
+    margin-top: 10px;
+}
+
+.container .Reservation h4 button {
+    padding: 15px;
+    background-color: rgb(255, 112, 112);
+    border: none;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.contact address {
+    line-height: 1.6;
+}
+
+.contact input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contact button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 20px;
+    border: none;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--main-color);
+    color: rgb(255, 253, 253);
+    padding: 20px;
+}
+
+
+/* end explor */
+
+
+/* end container */
+
+;
